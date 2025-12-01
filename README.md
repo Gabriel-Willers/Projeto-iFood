@@ -97,7 +97,7 @@ src/
   Exibe mensagem de sucesso.
   Limpa carrinho automaticamente.
 
-#🗃 Persistência em Memória (Objetos Singleton)
+# Persistência em Memória (Objetos Singleton)
   - O sistema usa repositórios em memória durante a execução:
   - Usuarios → controla todos os usuários cadastrados
   - Restaurantes → armazena restaurantes cadastrados
