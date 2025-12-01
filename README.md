@@ -56,45 +56,46 @@ src/
 
 👨‍🍳 Funcionalidades do Dono de Restaurante
 - Cadastro de Restaurante
-Cada Dono cria um restaurante próprio ao se registrar.
-O restaurante é automaticamente vinculado ao usuário.
+  Cada Dono cria um restaurante próprio ao se registrar.
+  O restaurante é automaticamente vinculado ao usuário.
 
-- Gerenciamento de Cardápio (CRUD)
-Adicionar Comidas ou Bebidas.
-Atualizar produtos do cardápio.
-Excluir itens.
-Cardápio separado por restaurante.
+- Gerenciamento de Cardápio
+  Adicionar Comidas ou Bebidas.
+  Atualizar produtos do cardápio.
+  Excluir itens.
+  Limpar os Campos
+  Cardápio separado por restaurante.
 
 - Polimorfismo Visual (JavaFX)
-Se o tipo for Comida, aparecem:
-Tipo de cozinha
-Opções vegetariano/vegano
-Se o tipo for Bebida, aparecem:
-Tamanho em ML
-Opção alcoólica/não alcoólica
+  Se o tipo for Comida, aparecem:
+  Tipo de cozinha
+  Opções vegetariano/vegano
+  Se o tipo for Bebida, aparecem:
+  Tamanho em ML
+  Opção alcoólica/não alcoólica
 
 - Restrições de Acesso
-Dono só acessa seu próprio cardápio.
-Não é possível adicionar item sem restaurante cadastrado.
+  Dono só acessa seu próprio cardápio.
+  Não é possível adicionar item sem restaurante cadastrado.
 
 🛒 Funcionalidades do Cliente
 - Navegação de Restaurantes
-Lista dinâmica de restaurantes cadastrados.
-Ao selecionar um restaurante, o cardápio aparece automaticamente.
+  Lista dinâmica de restaurantes cadastrados.
+  Ao selecionar um restaurante, o cardápio aparece automaticamente.
 
 - Monte seu Pedido
-Adicionar itens ao carrinho.
-Remover itens.
-Visualização do pedido atual.
+  Adicionar itens ao carrinho.
+  Remover itens.
+  Visualização do pedido atual.
 
 - Cálculo Automático
-Soma total dos preços.
-Tempo estimado = maior tempo de preparo entre os itens.
+  Soma total dos preços.
+  Tempo estimado = maior tempo de preparo entre os itens.
 
 - Finalização de Pedido
-Salva pedido globalmente (classe Pedidos).
-Exibe mensagem de sucesso.
-Limpa carrinho automaticamente.
+  Salva pedido globalmente (classe Pedidos).
+  Exibe mensagem de sucesso.
+  Limpa carrinho automaticamente.
 
 🗃 Persistência em Memória (Objetos Singleton)
 O sistema usa repositórios em memória durante a execução:
