@@ -34,13 +34,13 @@ src/
     │
     ├── itens/
     │   ├── Produto.java
-    │   ├── Comida.java
-    │   ├── Bebida.java
-    │   ├── Pedido.java
-    │   └── Pedidos.java
-    │
-    ├── restaurante/
-    │   ├── Restaurante.java
+    │      ├── Comida.java
+    │      ├── Bebida.java
+    │   ├── Pedido.java ─────────├────├GerenciadorDeProdutos
+    │   └── Pedidos.java         │
+    │                            │
+    ├── restaurante/             │
+    │   ├── Restaurante.java ────│
     │   └── Restaurantes.java
     │
     └── resources (FXML + layouts)
