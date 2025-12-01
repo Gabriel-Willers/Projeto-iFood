@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.ClienteController"
+      spacing="10" alignment="TOP_CENTER"
+      prefWidth="800" prefHeight="500">
+
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <children>
+        <Label text="Painel do Cliente - Fazer Pedido" style="-fx-font-size: 20;" />
+
+        <Label fx:id="lblCliente" text="Cliente: "/>
+
+        <HBox spacing="10">
+            <children>
+                <Label text="Restaurante:"/>
+                <ComboBox fx:id="comboRestaurantes" prefWidth="300" onAction="#selecionarRestaurante"/>
+            </children>
+        </HBox>
+
+        <HBox spacing="20">
+            <children>
+                <VBox spacing="5">
+                    <children>
+                        <Label text="Cardápio do Restaurante:" style="-fx-font-size: 16;"/>
+                        <ListView fx:id="listCardapio" prefWidth="350" prefHeight="300"/>
+                    </children>
+                </VBox>
+
+                <VBox spacing="5">
+                    <children>
+                        <Label text="Itens do Pedido:" style="-fx-font-size: 16;"/>
+                        <ListView fx:id="listPedido" prefWidth="350" prefHeight="300"/>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+
+        <HBox spacing="10">
+            <children>
+                <Button text="Adicionar ao Pedido" onAction="#adicionarItem"/>
+                <Button text="Remover do Pedido" onAction="#removerItem"/>
+                 <Button text="Finalizar Pedido" onAction="#finalizarPedido"/>
+                <Button text="Voltar ao Login" onAction="#voltarAoLogin"/>
+            </children>
+        </HBox>
+
+        <HBox spacing="20">
+            <children>
+                <Label fx:id="lblTotal" text="Total: R$ 0,00"/>
+                <Label fx:id="lblTempo" text="Tempo estimado: 0 min"/>
+                <Label fx:id="lblMsgCliente" text="" textFill="RED" />
+            </children>
+        </HBox>
+
+    </children>
+</VBox>
