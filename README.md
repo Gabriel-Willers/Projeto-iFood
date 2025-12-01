@@ -9,13 +9,10 @@ O sistema simula uma plataforma de delivery, permitindo interação entre Client
 
 O objetivo do sistema é permitir que:
 
-Donos de restaurantes cadastrem seus estabelecimentos, adicionem e gerenciem produtos do cardápio (comidas e bebidas).
-
-Clientes possam visualizar restaurantes disponíveis, montar pedidos e finalizar compras.
-
-O sistema controle automaticamente cálculo de totais, tempo estimado, e finalização de pedidos.
-
-Contas e dados cadastrados fiquem acessíveis durante a execução (persistência via objetos estáticos).
+- Donos de restaurantes cadastrem seus estabelecimentos, adicionem e gerenciem produtos do cardápio (comidas e bebidas).
+- Clientes possam visualizar restaurantes disponíveis, montar pedidos e finalizar compras.
+- O sistema controle automaticamente cálculo de totais, tempo estimado, e finalização de pedidos.
+- Contas e dados cadastrados fiquem acessíveis durante a execução (persistência via objetos estáticos).
 
 # Organização do Código
 
@@ -51,15 +48,11 @@ src/
 # Funcionalidades do Sistema
 🔐 Segurança do Sistema
 
-Tela única com Login e Cadastro.
-
-Validação de e-mail (impede cadastros duplicados).
-
-Impede cadastro com senhas vazias.
-
-Apenas usuários existentes podem efetuar login.
-
-Separação automática entre acesso de Cliente e Dono no login.
+- Tela única com Login e Cadastro.
+- Validação de e-mail (impede cadastros duplicados).
+- Impede cadastro com senhas vazias.
+- Apenas usuários existentes podem efetuar login.
+- Separação automática entre acesso de Cliente e Dono no login.
 
 👨‍🍳 Funcionalidades do Dono de Restaurante
 - Cadastro de Restaurante
@@ -109,80 +102,48 @@ Usuarios → controla todos os usuários cadastrados
 Restaurantes → armazena restaurantes cadastrados
 Pedidos → salva pedidos finalizados
 
-# Conceitos de POO Utilizados
+# Alguns dos Conceitos Utilizados
 
--Herança
-
--Cliente extends User
-
--DonoR extends User
-
--Comida extends Produto
-
--Bebida extends Produto
-
--Polimorfismo
-
--GerenciadorDeProdutos → implementado por Pedido e Restaurante
-
--Carregamento dinâmico dos campos no DonoController via instanceof.
-
--Encapsulamento
-
--Getters e setters em todas as classes do modelo.
-
--Interfaces
-
--GerenciadorDeProdutos define ações padronizadas.
-
--Coleções
-
--Uso de ArrayList<> para cardápio, usuários e pedidos.
-
--JavaFX
-
--FXML + Controllers
-
--Scene Switching (setRoot)
-
--ListView, ComboBox, Label, TextField
-
--Listeners para seleção dinâmica
+- Encapsulamento
+- Herança/Polimorfismo
+- Cliente e DonoR extends User
+- Comida e Bebida extends Produto
+- Interface: GerenciadorDeProdutos → implementado por Pedido e Restaurante
+- Carregamento dinâmico dos campos no DonoController via instanceof.
+- Getters e setters em todas as classes do modelo.
+- GerenciadorDeProdutos define ações padronizadas.
+- Uso de ArrayList<> para cardápio, usuários e pedidos.
+- JavaFX: FXML + Controllers
+- Scene Switching (setRoot)
+- ListView, ComboBox, Label, TextField
 
 # Como executar o projeto
 # Pré-requisitos
 
--JDK 17+
--JavaFX configurado (caso use terminal)
--VSCode / IntelliJ / Eclipse com plugin JavaFX
--Abra o projeto no editor.
--Execute a classe:
+- JDK 17+
+- JavaFX configurado (caso use terminal)
+- VSCode / IntelliJ / Eclipse com plugin JavaFX
+- Abra o projeto no editor.
+- Execute a classe:
    com.example.App
-As telas serão carregadas via FXML automaticamente.
+- As telas serão carregadas via FXML automaticamente.
 
 # Telas Principais (GUI)
 🔵 Tela de Login / Cadastro
 
-Acesso rápido
-
-Escolha entre Cliente ou Dono
-
-Validações de segurança
+- Acesso rápido
+- Escolha entre Cliente ou Dono
+- Validações de segurança
 
 🟢 Tela do Cliente
 
-Seleção de restaurante
-
-Cardápio dinâmico
-
-Carrinho
-
-Finalização de pedido
+- Seleção de restaurante
+- Cardápio dinâmico
+- Carrinho
+- Finalização de pedido
 
 🟠 Tela do Dono
 
-Cadastro de produtos
-
-Edição/remoção
-
-Listagem atualizada em tempo real
+- Cadastro de produtos
+- Edição/remoção
+- Listagem atualizada em tempo real
