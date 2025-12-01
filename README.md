@@ -7,12 +7,12 @@ Integrantes:
 Este é um projeto desenvolvido em Java utilizando JavaFX para interface gráfica.
 O sistema simula uma plataforma de delivery, permitindo interação entre Clientes e Donos de Restaurantes, seguindo boas práticas de POO (Programação Orientada a Objetos), padrões de projeto simples e organização em camadas.
 
-O objetivo do sistema é permitir que:
+# O objetivo do sistema é permitir que:
 
-- Donos de restaurantes cadastrem seus estabelecimentos, adicionem e gerenciem produtos do cardápio (comidas e bebidas).
-- Clientes possam visualizar restaurantes disponíveis, montar pedidos e finalizar compras.
-- O sistema controle automaticamente cálculo de totais, tempo estimado, e finalização de pedidos.
-- Contas e dados cadastrados fiquem acessíveis durante a execução (persistência via objetos estáticos).
+  - Donos de restaurantes cadastrem seus estabelecimentos, adicionem e gerenciem produtos do cardápio (comidas e bebidas).
+  - Clientes possam visualizar restaurantes disponíveis, montar pedidos e finalizar compras.
+  - O sistema controle automaticamente calcula: totais, tempo estimado, e finalização de pedidos.
+  - Contas e dados cadastrados fiquem acessíveis durante a execução (persistência via objetos estáticos).
 
 # Organização do Código
 
@@ -98,53 +98,52 @@ src/
   Limpa carrinho automaticamente.
 
 🗃 Persistência em Memória (Objetos Singleton)
-O sistema usa repositórios em memória durante a execução:
-Usuarios → controla todos os usuários cadastrados
-Restaurantes → armazena restaurantes cadastrados
-Pedidos → salva pedidos finalizados
+  - O sistema usa repositórios em memória durante a execução:
+  - Usuarios → controla todos os usuários cadastrados
+  - Restaurantes → armazena restaurantes cadastrados
+  - Pedidos → salva pedidos finalizados
 
 # Alguns dos Conceitos Utilizados
 
-- Encapsulamento
-- Herança/Polimorfismo
-- Cliente e DonoR extends User
-- Comida e Bebida extends Produto
-- Interface: GerenciadorDeProdutos → implementado por Pedido e Restaurante
-- Carregamento dinâmico dos campos no DonoController via instanceof.
-- Getters e setters em todas as classes do modelo.
-- GerenciadorDeProdutos define ações padronizadas.
-- Uso de ArrayList<> para cardápio, usuários e pedidos.
-- JavaFX: FXML + Controllers
-- Scene Switching (setRoot)
-- ListView, ComboBox, Label, TextField
+  - Encapsulamento
+  - Herança/Polimorfismo
+  - Cliente e DonoR extends User
+  - Comida e Bebida extends Produto
+  - Interface: GerenciadorDeProdutos → implementado por Pedido e Restaurante
+  - Carregamento dinâmico dos campos no DonoController via instanceof.
+  - Getters e setters em todas as classes do modelo.
+  - GerenciadorDeProdutos define ações padronizadas.
+  - Uso de ArrayList<> para cardápio, usuários e pedidos.
+  - JavaFX: FXML + Controllers
+  - Scene Switching (setRoot)
+  - ListView, ComboBox, Label, TextField
 
-# Como executar o projeto
 # Pré-requisitos
 
-- JDK 17+
-- JavaFX configurado (caso use terminal)
-- VSCode / IntelliJ / Eclipse com plugin JavaFX
-- Abra o projeto no editor.
-- Execute a classe:
-   com.example.App
-- As telas serão carregadas via FXML automaticamente.
+  - JDK 17+
+  - JavaFX configurado (caso use terminal)
+  - VSCode / IntelliJ / Eclipse com plugin JavaFX
+  - Abra o projeto no editor.
+  - Execute a classe:
+     com.example.App
+  - As telas serão carregadas via FXML automaticamente.
 
 # Telas Principais (GUI)
 🔵 Tela de Login / Cadastro
 
-- Acesso rápido
-- Escolha entre Cliente ou Dono
-- Validações de segurança
+  - Acesso rápido
+  - Escolha entre Cliente ou Dono
+  - Validações de segurança
 
 🟢 Tela do Cliente
 
-- Seleção de restaurante
-- Cardápio dinâmico
-- Carrinho
-- Finalização de pedido
+  - Seleção de restaurante
+  - Cardápio dinâmico
+  - Carrinho
+  - Finalização de pedido
 
 🟠 Tela do Dono
 
-- Cadastro de produtos
-- Edição/remoção
-- Listagem atualizada em tempo real
+  - Cadastro de produtos
+  - Edição/remoção
+  - Listagem atualizada em tempo real
