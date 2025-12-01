@@ -23,8 +23,9 @@ O sistema foi dividido em pacotes específicos para manter clareza, separação 
 src/
 
 └── com/example
-    ├── App.java
+    ├── ]
     
+    ├── App.java
     ├── PrimaryController.java
     ├── SecondaryController.java
     ├── ClienteController.java
