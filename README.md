@@ -22,7 +22,8 @@ Contas e dados cadastrados fiquem acessíveis durante a execução (persistênci
 O sistema foi dividido em pacotes específicos para manter clareza, separação de responsabilidades e boa manutenção do código.
 src/
 
-└── com/example
+└── 
+com/example
     ├── App.java
     ├── PrimaryController.java
     ├── SecondaryController.java
