@@ -23,32 +23,30 @@ O sistema foi dividido em pacotes específicos para manter clareza, separação 
 src/
 
 └── com/example
-    ├── 
-    
     ├── App.java
-    ├── PrimaryController.java
-    ├── SecondaryController.java
-    ├── ClienteController.java
-    ├── DonoController.java
-    │
-    ├── usuarios/
-    │   ├── User.java
-    │   ├── Cliente.java
-    │   ├── DonoR.java
-    │   └── Usuarios.java
-    │
-    ├── itens/
-    │   ├── Produto.java
-    │   ├── Comida.java
-    │   ├── Bebida.java
-    │   ├── Pedido.java
-    │   └── Pedidos.java
-    │
-    ├── restaurante/
-    │   ├── Restaurante.java
-    │   └── Restaurantes.java
-    │
-    └── resources (FXML + layouts)
+├── PrimaryController.java
+├── SecondaryController.java
+├── ClienteController.java
+├── DonoController.java
+│
+├── usuarios/
+│   ├── User.java
+│   ├── Cliente.java
+│   ├── DonoR.java
+│   └── Usuarios.java
+│
+├── itens/
+│   ├── Produto.java
+│   ├── Comida.java
+│   ├── Bebida.java
+│   ├── Pedido.java
+│   └── Pedidos.java
+│
+├── restaurante/
+│   ├── Restaurante.java
+│   └── Restaurantes.java
+│
+└── resources (FXML + layouts)
     
 # Funcionalidades do Sistema
 🔐 Segurança do Sistema
