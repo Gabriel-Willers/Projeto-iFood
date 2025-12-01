@@ -62,17 +62,17 @@ Apenas usuários existentes podem efetuar login.
 Separação automática entre acesso de Cliente e Dono no login.
 
 👨‍🍳 Funcionalidades do Dono de Restaurante
-✔ Cadastro de Restaurante
+- Cadastro de Restaurante
 Cada Dono cria um restaurante próprio ao se registrar.
 O restaurante é automaticamente vinculado ao usuário.
 
-✔ Gerenciamento de Cardápio (CRUD)
+- Gerenciamento de Cardápio (CRUD)
 Adicionar Comidas ou Bebidas.
 Atualizar produtos do cardápio.
 Excluir itens.
 Cardápio separado por restaurante.
 
-✔ Polimorfismo Visual (JavaFX)
+- Polimorfismo Visual (JavaFX)
 Se o tipo for Comida, aparecem:
 Tipo de cozinha
 Opções vegetariano/vegano
@@ -80,25 +80,25 @@ Se o tipo for Bebida, aparecem:
 Tamanho em ML
 Opção alcoólica/não alcoólica
 
-✔ Restrições de Acesso
+- Restrições de Acesso
 Dono só acessa seu próprio cardápio.
 Não é possível adicionar item sem restaurante cadastrado.
 
 🛒 Funcionalidades do Cliente
-✔ Navegação de Restaurantes
+- Navegação de Restaurantes
 Lista dinâmica de restaurantes cadastrados.
 Ao selecionar um restaurante, o cardápio aparece automaticamente.
 
-✔ Monte seu Pedido
+- Monte seu Pedido
 Adicionar itens ao carrinho.
 Remover itens.
 Visualização do pedido atual.
 
-✔ Cálculo Automático
+- Cálculo Automático
 Soma total dos preços.
 Tempo estimado = maior tempo de preparo entre os itens.
 
-✔ Finalização de Pedido
+- Finalização de Pedido
 Salva pedido globalmente (classe Pedidos).
 Exibe mensagem de sucesso.
 Limpa carrinho automaticamente.
@@ -110,50 +110,60 @@ Restaurantes → armazena restaurantes cadastrados
 Pedidos → salva pedidos finalizados
 
 # Conceitos de POO Utilizados
+1. Programação Orientada a Objetos (POO)
 
-Herança
+Abstração: entidades como User, Produto, Restaurante, Pedido.
 
-Cliente extends User
+Herança:
 
-DonoR extends User
+Cliente e DonoR → herdam de User.
 
-Comida extends Produto
+Comida e Bebida → herdam de Produto.
 
-Bebida extends Produto
+Polimorfismo:
 
-Polimorfismo
+Interface GerenciadorDeProdutos implementada por Restaurante e Pedido.
 
-GerenciadorDeProdutos → implementado por Pedido e Restaurante
+Reconhecimento dinâmico de tipo (instanceof) para exibir campos específicos no formulário.
 
-Carregamento dinâmico dos campos no DonoController via instanceof.
+Encapsulamento:
 
-Encapsulamento
+Atributos privados + getters/setters.
 
-Getters e setters em todas as classes do modelo.
+# Como executar o projeto
+# Pré-requisitos
 
-Interfaces
+-JDK 17+
+-JavaFX configurado (caso use terminal)
+-VSCode / IntelliJ / Eclipse com plugin JavaFX
+-Abra o projeto no editor.
+-Execute a classe:
+   com.example.App
+As telas serão carregadas via FXML automaticamente.
 
-GerenciadorDeProdutos define ações padronizadas.
+# Telas Principais (GUI)
+🔵 Tela de Login / Cadastro
 
-Coleções
+Acesso rápido
 
-Uso de ArrayList<> para cardápio, usuários e pedidos.
+Escolha entre Cliente ou Dono
 
-JavaFX
+Validações de segurança
 
-FXML + Controllers
+🟢 Tela do Cliente
 
-Scene Switching (setRoot)
+Seleção de restaurante
 
-ListView, ComboBox, Label, TextField
+Cardápio dinâmico
 
-Listeners para seleção dinâmica
+Carrinho
 
-Como executar o projeto
-✔ Pré-requisitos
+Finalização de pedido
 
-JDK 17+
+🟠 Tela do Dono
 
-JavaFX configurado (caso use terminal)
+Cadastro de produtos
 
-VSCode / IntelliJ / Eclipse com plugin JavaFX
+Edição/remoção
+
+Listagem atualizada em tempo real
