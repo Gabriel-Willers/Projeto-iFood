@@ -31,9 +31,9 @@ src/
     │
     ├── usuarios/
     │   ├── User.java
-    │   ├── Cliente.java
-    │   ├── DonoR.java
-    │   └── Usuarios.java
+    │   ├─├── Cliente.java
+    │     ├── DonoR.java
+    │   ├── Usuarios.java
     │
     ├── itens/
     │   ├── Produto.java
