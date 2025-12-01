@@ -110,25 +110,44 @@ Restaurantes → armazena restaurantes cadastrados
 Pedidos → salva pedidos finalizados
 
 # Conceitos de POO Utilizados
-1. Programação Orientada a Objetos (POO)
 
-Abstração: entidades como User, Produto, Restaurante, Pedido.
+-Herança
 
-Herança:
+-Cliente extends User
 
-Cliente e DonoR → herdam de User.
+-DonoR extends User
 
-Comida e Bebida → herdam de Produto.
+-Comida extends Produto
 
-Polimorfismo:
+-Bebida extends Produto
 
-Interface GerenciadorDeProdutos implementada por Restaurante e Pedido.
+-Polimorfismo
 
-Reconhecimento dinâmico de tipo (instanceof) para exibir campos específicos no formulário.
+-GerenciadorDeProdutos → implementado por Pedido e Restaurante
 
-Encapsulamento:
+-Carregamento dinâmico dos campos no DonoController via instanceof.
 
-Atributos privados + getters/setters.
+-Encapsulamento
+
+-Getters e setters em todas as classes do modelo.
+
+-Interfaces
+
+-GerenciadorDeProdutos define ações padronizadas.
+
+-Coleções
+
+-Uso de ArrayList<> para cardápio, usuários e pedidos.
+
+-JavaFX
+
+-FXML + Controllers
+
+-Scene Switching (setRoot)
+
+-ListView, ComboBox, Label, TextField
+
+-Listeners para seleção dinâmica
 
 # Como executar o projeto
 # Pré-requisitos
