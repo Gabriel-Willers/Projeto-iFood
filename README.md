@@ -5,7 +5,7 @@ Integrantes:
 # Sistema de Gerenciamento de Restaurante (JavaFX)
 
 Este é um projeto desenvolvido em Java utilizando JavaFX para interface gráfica.
-O sistema simula uma plataforma de delivery, permitindo interação entre Clientes e Donos de Restaurantes, seguindo boas práticas de POO (Programação Orientada a Objetos), padrões de projeto simples e organização em camadas.
+O sistema simula uma plataforma de delivery, permitindo interação entre Clientes e Donos de Restaurantes. Os users tem a sua disposição remover um produto ou do pedido ou do restaurante, adicionar, fazer login, cadastrar o tipo de conta e ter seus dados salvos enquanto o código estiver sendo executado.
 
 # O objetivo do sistema é permitir que:
 
@@ -50,7 +50,8 @@ src/
 
 - Tela única com Login e Cadastro.
 - Validação de e-mail (impede cadastros duplicados).
-- Impede cadastro com senhas vazias.
+- Impede cadastro com campos vazios.
+- O e-mail deve conter "@gmail.com".
 - Apenas usuários existentes podem efetuar login.
 - Separação automática entre acesso de Cliente e Dono no login.
 
@@ -63,16 +64,16 @@ src/
   Adicionar Comidas ou Bebidas.
   Atualizar produtos do cardápio.
   Excluir itens.
-  Limpar os Campos
+  Limpar os Campos.
   Cardápio separado por restaurante.
 
 - Polimorfismo Visual (JavaFX)
   Se o tipo for Comida, aparecem:
-  Tipo de cozinha
-  Opções vegetariano/vegano
-  Se o tipo for Bebida, aparecem:
-  Tamanho em ML
-  Opção alcoólica/não alcoólica
+  Tipo de cozinha.
+  Opções vegetariano/vegano.
+  Se o tipo for Bebida, aparece:
+     Tamanho em ML.
+     Opção alcoólica/não alcoólica.
 
 - Restrições de Acesso
   Dono só acessa seu próprio cardápio.
