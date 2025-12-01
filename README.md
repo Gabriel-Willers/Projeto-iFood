@@ -46,7 +46,7 @@ src/
     └── resources (FXML + layouts)
     
 # Funcionalidades do Sistema
-🔐 Segurança do Sistema
+#🔐 Segurança do Sistema
 
 - Tela única com Login e Cadastro.
 - Validação de e-mail (impede cadastros duplicados).
@@ -54,7 +54,7 @@ src/
 - Apenas usuários existentes podem efetuar login.
 - Separação automática entre acesso de Cliente e Dono no login.
 
-👨‍🍳 Funcionalidades do Dono de Restaurante
+#👨‍🍳 Funcionalidades do Dono de Restaurante
 - Cadastro de Restaurante
   Cada Dono cria um restaurante próprio ao se registrar.
   O restaurante é automaticamente vinculado ao usuário.
@@ -78,7 +78,7 @@ src/
   Dono só acessa seu próprio cardápio.
   Não é possível adicionar item sem restaurante cadastrado.
 
-🛒 Funcionalidades do Cliente
+#🛒 Funcionalidades do Cliente
 - Navegação de Restaurantes
   Lista dinâmica de restaurantes cadastrados.
   Ao selecionar um restaurante, o cardápio aparece automaticamente.
@@ -97,7 +97,7 @@ src/
   Exibe mensagem de sucesso.
   Limpa carrinho automaticamente.
 
-🗃 Persistência em Memória (Objetos Singleton)
+#🗃 Persistência em Memória (Objetos Singleton)
   - O sistema usa repositórios em memória durante a execução:
   - Usuarios → controla todos os usuários cadastrados
   - Restaurantes → armazena restaurantes cadastrados
